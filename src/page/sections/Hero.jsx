@@ -85,13 +85,9 @@ export default function Hero({ isVisible }) {
               <div className="absolute -inset-6 rounded-3xl bg-blue-500/10 blur-2xl"></div>
               <div className="relative aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 border border-white/10">
                 <img
-                  src="src/public/steve.jpg"
+                  src="/steve.jpg"
                   alt="Agbaje Stephen"
                   className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.target.style.display = "none";
-                    e.target.nextSibling.style.display = "flex";
-                  }}
                 />
               </div>
               <div className="absolute -z-10 top-8 right-8 w-full h-full border border-white/10 rounded-2xl"></div>
