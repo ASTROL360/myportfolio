@@ -85,7 +85,7 @@ export default function Portfolio() {
       description:
         "Comprehensive inventory management system for tracking products, sales, and stock levels with robust business logic and real-time analytics.",
       github: "https://github.com/Agbajestephen/Sales-Inventroy",
-      liveDemo: "https://inventory-company1.vercel.app",
+      // liveDemo: "https://inventory-company1.vercel.app",
     },
     {
       title: "Chatify Messaging App",
