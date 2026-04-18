@@ -16,24 +16,24 @@ export default function Contact() {
 
           <div className="grid md:grid-cols-2 gap-6">
             <a
-              href="mailto:agbajestephen5@gmail.com"
+              href="mailto:garbatoyin360@gmail.com"
               className="group flex items-center gap-4 p-6 bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-blue-500/10 hover:border-blue-400/30 hover:shadow-[0_20px_60px_-30px_rgba(59,130,246,0.6)] transition-all duration-300"
             >
             <Mail className="text-blue-300" size={24} />
             <div>
               <div className="text-sm text-gray-500">Email</div>
-              <div className="font-medium">agbajestephen5@gmail.com</div>
+              <div className="font-medium">garbatoyin360@gmail.com</div>
             </div>
           </a>
 
             <a
-              href="tel:09014057707"
+              href="tel:09164794335"
               className="group flex items-center gap-4 p-6 bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-blue-500/10 hover:border-blue-400/30 hover:shadow-[0_20px_60px_-30px_rgba(59,130,246,0.6)] transition-all duration-300"
             >
             <Phone className="text-blue-300" size={24} />
             <div>
               <div className="text-sm text-gray-500">Phone</div>
-              <div className="font-medium">09014057707</div>
+              <div className="font-medium">09164794335</div>
             </div>
           </a>
 
@@ -46,7 +46,7 @@ export default function Contact() {
           </div>
 
           <a
-            href="https://www.linkedin.com/in/stephen-agbaje-bb229a365/"
+            href="https://www.linkedin.com/in/garba-mubaraq-79152b368/"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-4 p-6 bg-white/10 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-blue-500/10 hover:border-blue-400/30 hover:shadow-[0_20px_60px_-30px_rgba(59,130,246,0.6)] transition-all duration-300"
@@ -61,7 +61,7 @@ export default function Contact() {
 
         <div className="flex justify-center gap-6 mt-12 pt-12 border-t border-white/10">
           <a
-            href="https://github.com/Agbajestephen"
+            href="https://github.com/ASTROL360"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-300/80 hover:text-blue-200 transition-colors"
@@ -69,7 +69,7 @@ export default function Contact() {
             <Github size={28} />
           </a>
           <a
-            href="https://www.linkedin.com/in/stephen-agbaje-bb229a365/"
+            href="https://www.linkedin.com/in/garba-mubaraq-79152b368/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-300/80 hover:text-blue-200 transition-colors"
@@ -77,7 +77,7 @@ export default function Contact() {
             <Linkedin size={28} />
           </a>
           <a
-            href="mailto:agbajestephen5@gmail.com"
+            href="mailto:garbatoyin360@gmail.com"
             className="text-blue-300/80 hover:text-blue-200 transition-colors"
           >
             <Mail size={28} />

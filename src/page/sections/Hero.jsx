@@ -22,7 +22,7 @@ export default function Hero({ isVisible }) {
               Hello, I am
             </div>
             <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight">
-              Agbaje Stephen
+              Garba Mubaraq
             </h1>
             <h2 className="text-3xl md:text-4xl text-blue-300 mb-6">
               Full Stack Developer
@@ -52,7 +52,7 @@ export default function Hero({ isVisible }) {
             </div>
             <div className="flex gap-4 mt-8">
               <a
-                href="https://github.com/Agbajestephen"
+                href="https://github.com/ASTROL360"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-300/80 hover:text-blue-200 transition-colors"
@@ -60,7 +60,7 @@ export default function Hero({ isVisible }) {
                 <Github size={24} />
               </a>
               <a
-                href="https://www.linkedin.com/in/stephen-agbaje-bb229a365/"
+                href="https://www.linkedin.com/in/garba-mubaraq-79152b368/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-300/80 hover:text-blue-200 transition-colors"
@@ -68,7 +68,7 @@ export default function Hero({ isVisible }) {
                 <Linkedin size={24} />
               </a>
               <a
-                href="mailto:agbajestephen5@gmail.com"
+                href="mailto:garbatoyin360@gmail.com"
                 className="text-blue-300/80 hover:text-blue-200 transition-colors"
               >
                 <Mail size={24} />
@@ -85,8 +85,8 @@ export default function Hero({ isVisible }) {
               <div className="absolute -inset-6 rounded-3xl bg-blue-500/10 blur-2xl"></div>
               <div className="relative aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-gray-800 to-gray-900 border border-white/10">
                 <img
-                  src="/steve.jpg"
-                  alt="Agbaje Stephen"
+                  src="/myself.jpg"
+                  alt="Garba Munaraq"
                   className="w-full h-full object-cover"
                 />
               </div>

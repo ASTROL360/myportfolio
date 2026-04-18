@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <div className="text-xl font-semibold tracking-wide text-blue-300">
-              Agbaje Stephen
+              Garba Mubaraq
             </div>
             <p className="text-gray-400 mt-3 leading-relaxed">
               Full stack developer crafting clean, scalable, and reliable web
@@ -41,7 +41,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col gap-2 text-gray-400">
               <a
-                href="https://github.com/Agbajestephen"
+                href="https://github.com/Garbatoyin360@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-blue-300 transition"
@@ -57,7 +57,7 @@ export default function Footer() {
                 LinkedIn
               </a>
               <a
-                href="mailto:agbajestephen5@gmail.com"
+                href="mailto:garbatoyin360@gmail.com"
                 className="hover:text-blue-300 transition"
               >
                 Email
@@ -70,7 +70,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-6 border-t border-white/10 text-center text-sm text-gray-500">
-          © 2026 Agbaje Stephen. All rights reserved. Built with React &
+          © 2026 Garba Mubaraq . All rights reserved. Built with React &
           Tailwind CSS.
         </div>
       </div>

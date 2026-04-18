@@ -80,44 +80,44 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "Sales & Inventory System",
+      title: "Hospital Managemaent",
       tech: ["Java", "MySQL"],
       description:
-        "Comprehensive inventory management system for tracking products, sales, and stock levels with robust business logic and real-time analytics.",
-      github: "https://github.com/Agbajestephen/Sales-Inventroy",
+        "Developed a hospital management system to manage patient records, appointments, and hospital operations. Built using Java and SQL, with focus on efficient data handling and organized record management.",
+      github: "https://github.com/ASTROL360/TrueMedix.git",
       // liveDemo: "https://inventory-company1.vercel.app",
     },
     {
-      title: "Chatify Messaging App",
-      tech: ["React", "Node.js", "Express", "MongoDB"],
+      title: "Finance Application",
+      tech: ["React", "Node.js", "Firebase", "MongoDB"],
       description:
         "Real-time messaging application with secure authentication, live chat functionality, and scalable server-side architecture.",
-      github: "https://github.com/Agbajestephen/CHATIFY-APP",
-      liveDemo: "https://chatify8.vercel.app",
+      github: "https://ASTROL360//Finance-APP-React.git",
+      // liveDemo: "https://chatify8.vercel.app",
     },
     {
-      title: "Notes Application",
-      tech: ["Express", "EJS", "MongoDB", "Google OAuth"],
+      title: "Student Attendance",
+      tech: ["Java", "MYSQL"],
       description:
-        "Full-stack notes management application with secure OAuth authentication and comprehensive CRUD operations.",
+        "Built using java for the core logic and MYSQL for secure data presistence,the system replaces traditional pape-based registers with a reliable digital solution.",
       github: "https://github.com/Agbajestephen/Note-Project",
-      liveDemo: "", // Add when deployed
+      // liveDemo: "", // Add when deployed
     },
     {
       title: "Restaurant Website",
       tech: ["React", "CSS"],
       description:
         "Modern restaurant website featuring interactive design, responsive layout, and smooth user experience.",
-      github: "https://github.com/Agbajestephen/Resturant",
-      liveDemo: "https://goke-resturant.vercel.app",
+      github: "https://github.com/ASTROL360/Restaurant.git",
+      // liveDemo: "https://goke-resturant.vercel.app",
     },
   ];
 
   const certifications = [
     {
-      title: "AI Starter Kit",
-      issuer: "ALX",
-      year: "2025",
+      title: "WEAC",
+      issuer: "COLLEGE",
+      year: "2024",
     },
     {
       title: "Master Mind Series - Full Stack Development",
