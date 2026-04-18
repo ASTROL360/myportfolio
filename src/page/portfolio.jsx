@@ -91,7 +91,7 @@ export default function Portfolio() {
       title: "Finance Application",
       tech: ["React", "Node.js", "Firebase", "MongoDB"],
       description:
-        "Real-time messaging application with secure authentication, live chat functionality, and scalable server-side architecture.",
+        "Real-time finance application for managing transactions and tracking financial data with a focus on user experience and data security.",
       github: "https://ASTROL360//Finance-APP-React.git",
       // liveDemo: "https://chatify8.vercel.app",
     },
@@ -105,7 +105,7 @@ export default function Portfolio() {
     },
     {
       title: "Restaurant Website",
-      tech: ["React", "CSS"],
+      tech: ["React", "Tailwind CSS"],
       description:
         "Modern restaurant website featuring interactive design, responsive layout, and smooth user experience.",
       github: "https://github.com/ASTROL360/Restaurant.git",

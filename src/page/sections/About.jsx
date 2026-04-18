@@ -30,7 +30,7 @@ export default function About({ isVisible }) {
               polished.
             </p>
             <p>
-              Outside of tech, I love playing football and exploring new music. I’m also a big fan of sci-fi and fantasy.
+              Outside of tech, I love playing football and exploring new music. I’m a big fan of sports.
             </p>
           </div>
         </div>
