@@ -111,14 +111,23 @@ export default function Portfolio() {
       github: "https://github.com/ASTROL360/Restaurant.git",
       // liveDemo: "https://goke-resturant.vercel.app",
     },
+    {
+      title: "Recipe App",
+      tech: ["React Native", "Node.js", "PostgreSQL", "Expo"],
+      description:
+        "Cross-platform mobile recipe application to browse, search, save, and share recipes. Features user authentication with Clerk, category filters, favorites, and video tutorials, powered by an Express and PostgreSQL backend.",
+      github: "https://github.com/ASTROL360/Recipe-App.git",
+    },
+    {
+      title: "E-Commerce",
+      tech: ["React", "Node.js", "Express", "React Native"],
+      description:
+        "Full-stack e-commerce platform with separate backend API, web frontend, and mobile app, including a fashion store API with Postman collection for testing and easy seeding.",
+      github: "https://github.com/ASTROL360/E-commerce.git",
+    },
   ];
 
   const certifications = [
-    {
-      title: "WEAC",
-      issuer: "COLLEGE",
-      year: "2024",
-    },
     {
       title: "Master Mind Series - Full Stack Development",
       issuer: "National Institute of Information Technology (NIIT)",
