@@ -62,7 +62,7 @@ export default function Footer() {
               >
                 Email
               </a>
-              <a href="tel:+234" className="hover:text-blue-300 transition">
+              <a href="tel:0901405777" className="hover:text-blue-300 transition">
                 Phone
               </a>
             </div>
