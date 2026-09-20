@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <div className="text-xl font-semibold tracking-wide text-blue-300">
-              Garba-Mubaraq
+              Garba Mubaraq
             </div>
             <p className="text-gray-400 mt-3 leading-relaxed">
               Full stack developer crafting clean, scalable, and reliable web
