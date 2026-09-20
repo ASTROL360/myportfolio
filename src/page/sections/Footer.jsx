@@ -70,7 +70,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-6 border-t border-white/10 text-center text-sm text-gray-500">
-          © 2025 Garba Mubaraq . All rights reserved. Built with React &
+          © 2026 Garba Mubaraq . All rights reserved. Built with React &
           Tailwind CSS.
         </div>
       </div>
