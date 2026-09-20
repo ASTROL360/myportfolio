@@ -9,7 +9,6 @@ import Projects from "./sections/Projects";
 import Skills from "./sections/Skills";
 
 export default function Portfolio() {
-  const [isVisible, setIsVisible] = useState({});
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -17,27 +16,7 @@ export default function Portfolio() {
       setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          setIsVisible((prev) => ({
-            ...prev,
-            [entry.target.id]: entry.isIntersecting,
-          }));
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    document.querySelectorAll("section[id]").forEach((section) => {
-      observer.observe(section);
-    });
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-      observer.disconnect();
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const skillGroups = [
@@ -80,7 +59,8 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "Hospital Managemaent",
+      title: "Hospital Management",
+      image: "/projects/hospital.svg",
       tech: ["Java", "MySQL"],
       description:
         "Developed a hospital management system to manage patient records, appointments, and hospital operations. Built using Java and SQL, with focus on efficient data handling and organized record management.",
@@ -89,6 +69,7 @@ export default function Portfolio() {
     },
     {
       title: "Finance Application",
+      image: "/projects/finance.svg",
       tech: ["React", "Node.js", "Firebase", "MongoDB"],
       description:
         "Real-time finance application for managing transactions and tracking financial data with a focus on user experience and data security.",
@@ -97,6 +78,7 @@ export default function Portfolio() {
     },
     {
       title: "Student Attendance",
+      image: "/projects/attendance.svg",
       tech: ["Java", "MYSQL"],
       description:
         "Built using java for the core logic and MYSQL for secure data presistence,the system replaces traditional pape-based registers with a reliable digital solution.",
@@ -105,6 +87,7 @@ export default function Portfolio() {
     },
     {
       title: "Restaurant Website",
+      image: "/projects/restaurant.svg",
       tech: ["React", "Tailwind CSS"],
       description:
         "Modern restaurant website featuring interactive design, responsive layout, and smooth user experience.",
@@ -113,6 +96,7 @@ export default function Portfolio() {
     },
     {
       title: "Recipe App",
+      image: "/projects/recipe.svg",
       tech: ["React Native", "Node.js", "PostgreSQL", "Expo"],
       description:
         "Cross-platform mobile recipe application to browse, search, save, and share recipes. Features user authentication with Clerk, category filters, favorites, and video tutorials, powered by an Express and PostgreSQL backend.",
@@ -120,6 +104,7 @@ export default function Portfolio() {
     },
     {
       title: "E-Commerce",
+      image: "/projects/ecommerce.svg",
       tech: ["React", "Node.js", "Express", "React Native"],
       description:
         "Full-stack e-commerce platform with separate backend API, web frontend, and mobile app, including a fashion store API with Postman collection for testing and easy seeding.",
@@ -139,10 +124,10 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-black text-white bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.08),_rgba(0,0,0,0.9))]">
       <NavBar isScrolled={isScrolled} />
-      <Hero isVisible={isVisible} />
-      <About isVisible={isVisible} />
-      <Skills isVisible={isVisible} skillGroups={skillGroups} />
-      <Projects isVisible={isVisible} projects={projects} />
+      <Hero />
+      <About />
+      <Skills skillGroups={skillGroups} />
+      <Projects projects={projects} />
       <Certifications certifications={certifications} />
       <Contact />
       <Footer />

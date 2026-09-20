@@ -1,29 +1,60 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 
-export default function Projects({ isVisible, projects }) {
+const containerVariants = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.1 } },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 40 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
+
+export default function Projects({ projects }) {
   return (
     <section id="projects" className="relative py-32 px-6">
       <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent"></div>
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-blue-300">
-          Featured Projects
-        </h2>
-        <p className="text-gray-400 mb-16 text-lg">
-          A collection of my recent work showcasing full stack development and
-          product-focused builds.
-        </p>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-blue-300">
+            Featured Projects
+          </h2>
+          <p className="text-gray-400 mb-16 text-lg">
+            A collection of my recent work showcasing full stack development and
+            product-focused builds.
+          </p>
+        </motion.div>
 
-        <div className="grid gap-6 md:grid-cols-2">
-          {projects.map((project, index) => (
-            <div
-              key={project.title}
-              className={`group transition-all duration-1000 ${
-                isVisible.projects ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-              }`}
-              style={{ transitionDelay: `${index * 80}ms` }}
-            >
-              <div className="relative p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-blue-500/5 hover:border-blue-400/30 hover:shadow-[0_20px_60px_-30px_rgba(59,130,246,0.6)] transition-all duration-300">
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.05 }}
+          className="grid gap-6 md:grid-cols-2"
+        >
+          {projects.map((project) => (
+            <motion.div key={project.title} variants={itemVariants}>
+              <div className="group relative overflow-hidden p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-blue-500/5 hover:border-blue-400/30 hover:shadow-[0_20px_60px_-30px_rgba(59,130,246,0.6)] transition-all duration-300">
+                <div className="relative overflow-hidden rounded-lg mb-5 h-44 bg-white/5 border border-white/10">
+                  <img
+                    src={project.image}
+                    alt={`${project.title} screenshot`}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
                 <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-200 transition-colors">
                   {project.title}
                 </h3>
@@ -65,9 +96,9 @@ export default function Projects({ isVisible, projects }) {
                   )}
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );
