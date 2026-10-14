@@ -60,7 +60,6 @@ export default function Portfolio() {
   const projects = [
     {
       title: "Hospital Management",
-      image: "/projects/hospital.svg",
       tech: ["Java", "MySQL"],
       description:
         "Developed a hospital management system to manage patient records, appointments, and hospital operations. Built using Java and SQL, with focus on efficient data handling and organized record management.",
@@ -69,7 +68,6 @@ export default function Portfolio() {
     },
     {
       title: "Finance Application",
-      image: "/projects/finance.svg",
       tech: ["React", "Node.js", "Firebase", "MongoDB"],
       description:
         "Real-time finance application for managing transactions and tracking financial data with a focus on user experience and data security.",
@@ -78,7 +76,6 @@ export default function Portfolio() {
     },
     {
       title: "Student Attendance",
-      image: "/projects/attendance.svg",
       tech: ["Java", "MYSQL"],
       description:
         "Built using java for the core logic and MYSQL for secure data presistence,the system replaces traditional pape-based registers with a reliable digital solution.",
@@ -87,7 +84,6 @@ export default function Portfolio() {
     },
     {
       title: "Restaurant Website",
-      image: "/projects/restaurant.svg",
       tech: ["React", "Tailwind CSS"],
       description:
         "Modern restaurant website featuring interactive design, responsive layout, and smooth user experience.",
@@ -96,7 +92,6 @@ export default function Portfolio() {
     },
     {
       title: "Recipe App",
-      image: "/projects/recipe.svg",
       tech: ["React Native", "Node.js", "PostgreSQL", "Expo"],
       description:
         "Cross-platform mobile recipe application to browse, search, save, and share recipes. Features user authentication with Clerk, category filters, favorites, and video tutorials, powered by an Express and PostgreSQL backend.",
