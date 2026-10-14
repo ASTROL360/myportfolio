@@ -103,6 +103,7 @@ export default function Portfolio() {
       description:
         "Full-stack e-commerce platform with separate backend API, web frontend, and mobile app, including a fashion store API with Postman collection for testing and easy seeding.",
       github: "https://github.com/ASTROL360/E-commerce.git",
+      liveDemo: "https://shop-hubs.vercel.app/",
     },
   ];
 
