@@ -88,7 +88,7 @@ export default function Portfolio() {
       description:
         "Modern restaurant website featuring interactive design, responsive layout, and smooth user experience.",
       github: "https://github.com/ASTROL360/Restaurant.git",
-      // liveDemo: "https://goke-resturant.vercel.app",
+      liveDemo: "https://bella-cucinas.vercel.app/",
     },
     {
       title: "Recipe App",
