@@ -104,7 +104,6 @@ export default function Portfolio() {
     },
     {
       title: "E-Commerce",
-      image: "/projects/ecommerce.svg",
       tech: ["React", "Node.js", "Express", "React Native"],
       description:
         "Full-stack e-commerce platform with separate backend API, web frontend, and mobile app, including a fashion store API with Postman collection for testing and easy seeding.",

@@ -46,15 +46,17 @@ export default function Projects({ projects }) {
           {projects.map((project) => (
             <motion.div key={project.title} variants={itemVariants}>
               <div className="group relative overflow-hidden p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl hover:bg-blue-500/5 hover:border-blue-400/30 hover:shadow-[0_20px_60px_-30px_rgba(59,130,246,0.6)] transition-all duration-300">
-                <div className="relative overflow-hidden rounded-lg mb-5 h-44 bg-white/5 border border-white/10">
-                  <img
-                    src={project.image}
-                    alt={`${project.title} screenshot`}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                </div>
+                {project.image && (
+                  <div className="relative overflow-hidden rounded-lg mb-5 h-44 bg-white/5 border border-white/10">
+                    <img
+                      src={project.image}
+                      alt={`${project.title} screenshot`}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  </div>
+                )}
                 <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-200 transition-colors">
                   {project.title}
                 </h3>
